@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19FC1B4F-4B8E-4D3D-8895-24B0BEA4D798}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheLittlestCompany.MasterClass</RootNamespace>
+    <AssemblyName>TheLittlestCompany.MasterClass</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Lethal Company\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Lethal Company\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Netcode.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Unity.Netcode.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Lethal Company\Lethal Company_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Lethal Company\Lethal Company_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Lethal Company\Lethal Company_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\All Commands.cs" />
+    <Compile Include="ConfigManager\Configs.cs" />
+    <Compile Include="ConfigManager\SyncConfigs.cs" />
+    <Compile Include="Easter Eggs\Hit Size.cs" />
+    <Compile Include="Enemy Table\Smol Baboon.cs" />
+    <Compile Include="Enemy Table\Smol Barber.cs" />
+    <Compile Include="Enemy Table\Smol Bracken.cs" />
+    <Compile Include="Enemy Table\Smol Butler.cs" />
+    <Compile Include="Enemy Table\Smol Coilhead.cs" />
+    <Compile Include="Enemy Table\Smol Dogs.cs" />
+    <Compile Include="Enemy Table\Smol Giants.cs" />
+    <Compile Include="Enemy Table\Smol Girl.cs" />
+    <Compile Include="Enemy Table\Smol Hoardingbug.cs" />
+    <Compile Include="Enemy Table\Smol Jester.cs" />
+    <Compile Include="Enemy Table\Smol Lizard.cs" />
+    <Compile Include="Enemy Table\Smol ManEater.cs" />
+    <Compile Include="Enemy Table\Smol Masked Boi.cs" />
+    <Compile Include="Enemy Table\Smol Mech.cs" />
+    <Compile Include="Enemy Table\Smol Nutcracker.cs" />
+    <Compile Include="Enemy Table\Smol Slimes.cs" />
+    <Compile Include="Enemy Table\Smol Snare.cs" />
+    <Compile Include="Enemy Table\Smol Spider.cs" />
+    <Compile Include="Enemy Table\Smol Thumper.cs" />
+    <Compile Include="Enemy Table\Smol Tulip.cs" />
+    <Compile Include="Enemy Table\Smol Worm.cs" />
+    <Compile Include="Furniture\Terminal Patch\Reset Terminal Size.cs" />
+    <Compile Include="Furniture\Terminal Patch\Set Terminal Size.cs" />
+    <Compile Include="Furniture\Terminal Patch\Terminal Check Patch.cs" />
+    <Compile Include="Furniture\Terminal Patch\Terminal Reflection Extensions.cs" />
+    <Compile Include="Furniture\Traps\Smol Landmines.cs" />
+    <Compile Include="Furniture\Traps\Smol Spikes.cs" />
+    <Compile Include="Furniture\Traps\Smol Turrets.cs" />
+    <Compile Include="Furniture\Traps\Trap Handler.cs" />
+    <Compile Include="Player Table\Failure Punishment.cs" />
+    <Compile Include="Player Table\Player Joins.cs" />
+    <Compile Include="Player Table\Player Size.cs" />
+    <Compile Include="Player Table\Visor Fix.cs" />
+    <Compile Include="TheLittlestCompanyPlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Furniture\Cruiser Patch\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
