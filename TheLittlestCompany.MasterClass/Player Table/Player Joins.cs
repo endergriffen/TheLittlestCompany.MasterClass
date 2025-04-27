@@ -10,7 +10,7 @@ namespace TheLittlestCompany.MasterClass.Player_Table
     {
         public static bool apple = false;
 
-        // List to keep track of players that have been randomized
+        // List to keep track of players that have been randomizedf
         private static Dictionary<ulong, string> playerLogs = new Dictionary<ulong, string>();
 
         // Assuming postfixRandomizedPlayers is defined in another class, reference it here
